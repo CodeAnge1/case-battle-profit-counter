@@ -1,1 +1,1 @@
-# case-battle-profit-counter
+# Case battle profit counter
