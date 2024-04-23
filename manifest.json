@@ -1,0 +1,25 @@
+{
+  "name": "Case battle profit counter",
+  "description": "Give you more information about any case",
+  "version": "0.9",
+  "manifest_version": 3,
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "debugger",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://case-battle.vip/case/*"
+  ],
+  "background": {
+      "service_worker": "background.js",
+      "type": "module"
+  },
+    "content_scripts": [
+   {
+     "matches": ["https://case-battle.vip/case/*"],
+     "js": ["main_script.js"]
+   }
+ ]
+}
